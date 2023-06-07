@@ -301,7 +301,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
         while wait() do
             if _G.INSTANT == true then
                 for i,v in pairs(game.Workspace.Game.Characters:GetDescendants()) do
-                    if v.Name == "Kabuto" and v:FindFirstChild("AI") and v.Humanoid.Health < 10000 then
+                    if v.Name == "Kabuto" and v:FindFirstChild("AI") and v.Humanoid.Health < 9999 then
                         v.Humanoid.Health = 0
                     end 
                 end
@@ -312,7 +312,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
         while wait() do
             if _G.INSTANT == true then
                 for i,v in pairs(game.Workspace.Game.Characters:GetDescendants()) do
-                    if v.Name == "MK-Exterminator Model 130" and v:FindFirstChild("AI") and v.Humanoid.Health < 20000 then
+                    if v.Name == "MK-Exterminator Model 130" and v:FindFirstChild("AI") and v.Humanoid.Health < 19999 then
                         v.Humanoid.Health = 0
                     end 
                 end
