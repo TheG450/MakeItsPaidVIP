@@ -359,3 +359,14 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
             end
             game:GetService("UserInputService").InputBegan:connect(onKeyPress)
     end)
+ -----------------------------------------------------------------------------------------------------
+    spawn(function()
+	    while wait(5) do
+            local anti = game:GetService("VirtualUser")
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+            anti:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            wait(1)
+            anti:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            end)
+        end
+    end)
