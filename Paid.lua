@@ -55,7 +55,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
     end)
     window:Label("Credits to GZE450#6591", Color3.fromRGB(127, 143, 166))
     window2:Label("Credits to GZE450#6591", Color3.fromRGB(127, 143, 166))
-    library:Keybind("P")
+    library:Keybind("L")
     spawn(function()
         while wait() do
             pcall(function()
