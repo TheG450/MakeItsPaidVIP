@@ -362,13 +362,10 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
  -----------------------------------------------------------------------------------------------------
     spawn(function()
 	    while wait(5) do
-            local OldNameCall = nil
-	OldNameCall = hookmetamethod(game,"__namecall",function(...)
-	   local self, key = ...
-	   if self == game:GetService("Players").LocalPlayer and getcallingmethod() == "Idled" then
-	       return true
-	   end
-	   return OldNameCall(...)
-	end)
+            game:GetService("Players").LocalPlayer.Idled:connect(
+		   function()
+		       game:GetService("VirtalUser"):ClickButton2(Vector2.new())
+		   end
+		)
         end
     end)
