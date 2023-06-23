@@ -334,7 +334,6 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
     -----------------------------------------------------------------------------------------------------
 
     spawn(function()
-        while wait() do
             setting = settings().Network
             local Effect = Instance.new("ColorCorrectionEffect")
             Effect.Parent = game.Lighting
@@ -359,5 +358,4 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroe
             end
             end
             game:GetService("UserInputService").InputBegan:connect(onKeyPress)
-        end
     end)
